@@ -1,147 +1,150 @@
 import Button from "./components/Ui/Button/Button";
 import Card from "./components/Layout/Card/card";
 import Table from "./components/Layout/Table/table";
-import "./App.css";
+import Home from "./Components/Pages/Home"
 
 function App() {
-  // Button functions
-  const handlePrimaryClick = () => {
-    alert("Primary Button Clicked!");
-  };
 
-  const handleSecondaryClick = () => {
-    alert("Secondary Button Clicked!");
-  };
+   return <Home />
 
-  const handleDelete = () => {
-    alert("Delete Button Clicked!");
-  };
+  // // Button functions
+  // const handlePrimaryClick = () => {
+  //   alert("Primary Button Clicked!");
+  // };
 
-  // Table data
-  const students = [
-    {
-      name: "Ahmed",
-      age: 17,
-      city: "Cairo",
-    },
-    {
-      name: "Omar",
-      age: 16,
-      city: "Giza",
-    },
-    {
-      name: "Mariam",
-      age: 17,
-      city: "Alexandria",
-    },
-    {
-      name: "Youssef",
-      age: 16,
-      city: "Mansoura",
-    },
-  ];
+  // const handleSecondaryClick = () => {
+  //   alert("Secondary Button Clicked!");
+  // };
 
-  const columns = [
-    "Name",
-    "Age",
-    "City",
-  ];
+  // const handleDelete = () => {
+  //   alert("Delete Button Clicked!");
+  // };
 
-  return (
-    <div className="app">
+  // // Table data
+  // const students = [
+  //   {
+  //     name: "Ahmed",
+  //     age: 17,
+  //     city: "Cairo",
+  //   },
+  //   {
+  //     name: "Omar",
+  //     age: 16,
+  //     city: "Giza",
+  //   },
+  //   {
+  //     name: "Mariam",
+  //     age: 17,
+  //     city: "Alexandria",
+  //   },
+  //   {
+  //     name: "Youssef",
+  //     age: 16,
+  //     city: "Mansoura",
+  //   },
+  // ];
 
-      <h1>Reusable Components</h1>
+  // const columns = [
+  //   "Name",
+  //   "Age",
+  //   "City",
+  // ];
 
-      {/* ================= BUTTONS ================= */}
+  // return (
+  //   <div className="app">
 
-      <section>
-        <h2>Buttons</h2>
+  //     <h1>Reusable Components</h1>
 
-        <div className="buttons">
+  //     {/* ================= BUTTONS ================= */}
 
-          <Button
-            text="Primary Button"
-            onClick={handlePrimaryClick}
-            variant="primary"
-          />
+  //     <section>
+  //       <h2>Buttons</h2>
 
-          <Button
-            text="Secondary Button"
-            onClick={handleSecondaryClick}
-            variant="secondary"
-          />
+  //       <div className="buttons">
 
-          <Button
-            text="Delete"
-            onClick={handleDelete}
-            variant="danger"
-          />
+  //         <Button
+  //           text="Primary Button"
+  //           onClick={handlePrimaryClick}
+  //           variant="primary"
+  //         />
 
-          <Button
-            text="Disabled"
-            onClick={() => {}}
-            variant="primary"
-            disabled={true}
-          />
+  //         <Button
+  //           text="Secondary Button"
+  //           onClick={handleSecondaryClick}
+  //           variant="secondary"
+  //         />
 
-        </div>
-      </section>
+  //         <Button
+  //           text="Delete"
+  //           onClick={handleDelete}
+  //           variant="danger"
+  //         />
 
+  //         <Button
+  //           text="Disabled"
+  //           onClick={() => {}}
+  //           variant="primary"
+  //           disabled={true}
+  //         />
 
-      {/* ================= CARDS ================= */}
-
-      <section>
-        <h2>Cards</h2>
-
-        <div className="cards">
-
-          <Card
-            title="React Development"
-            description="Learn how to build modern web applications using React."
-            image="https://images.unsplash.com/photo-1633356122544-f134324a6cee"
-          >
-            <Button
-              text="Learn More"
-              variant="primary"
-              onClick={() =>
-                alert("React Course")
-              }
-            />
-          </Card>
+  //       </div>
+  //     </section>
 
 
-          <Card
-            title="JavaScript"
-            description="Learn JavaScript fundamentals and modern programming concepts."
-            image="https://images.unsplash.com/photo-1627398242454-45a1465c2479"
-          >
-            <Button
-              text="View Course"
-              variant="secondary"
-              onClick={() =>
-                alert("JavaScript Course")
-              }
-            />
-          </Card>
+  //     {/* ================= CARDS ================= */}
 
-        </div>
-      </section>
+  //     <section>
+  //       <h2>Cards</h2>
+
+  //       <div className="cards">
+
+  //         <Card
+  //           title="React Development"
+  //           description="Learn how to build modern web applications using React."
+  //           image="https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+  //         >
+  //           <Button
+  //             text="Learn More"
+  //             variant="primary"
+  //             onClick={() =>
+  //               alert("React Course")
+  //             }
+  //           />
+  //         </Card>
 
 
-      {/* ================= TABLE ================= */}
+  //         <Card
+  //           title="JavaScript"
+  //           description="Learn JavaScript fundamentals and modern programming concepts."
+  //           image="https://images.unsplash.com/photo-1627398242454-45a1465c2479"
+  //         >
+  //           <Button
+  //             text="View Course"
+  //             variant="secondary"
+  //             onClick={() =>
+  //               alert("JavaScript Course")
+  //             }
+  //           />
+  //         </Card>
 
-      <section>
-        <h2>Students</h2>
+  //       </div>
+  //     </section>
 
-        <Table
-          columns={columns}
-          data={students}
-          striped={true}
-        />
-      </section>
 
-    </div>
-  );
+  //     {/* ================= TABLE ================= */}
+
+  //     <section>
+  //       <h2>Students</h2>
+
+  //       <Table
+  //         columns={columns}
+  //         data={students}
+  //         striped={true}
+  //       />
+  //     </section>
+  //   </div
+  //)
+
 }
 
 export default App;
